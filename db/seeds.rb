@@ -1,15 +1,26 @@
-class Seed
+require 'faker'
 
-  def self.begin
-    seed = Seed.new
-    seed.generate_products
-  end
+Product.destroy_all
+User.destroy_all
 
-  def generate_products
-    20.times do |i|
-      Product.create!(name: Faker::Lorem.word, price: rand(10...100), description: Faker::Lorem.sentence(5, false, 0).chop)
-    end
-  end
+admin = User.create(
+  email: 'admin@gmail.com',
+  password: 'adminpass',
+  admin: true
+  )
+user = User.create(
+  email: 'user@gmail.com',
+  password: 'userpass',
+  admin: false
+  )
+
+20.times do |i|
+  Product.create!(
+    name: Faker::Lorem.word,
+    price: rand(10...100),
+    description: Faker::Lorem.sentence(5, false, 0).chop
+    )
 end
 
-Seed.begin
+p "Created #{User.count} users"
+p "Created #{Product.count} products"
