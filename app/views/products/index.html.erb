@@ -7,6 +7,8 @@
       <h4><%= product.name %></h4>
       <p><%= product.description %></p>
       <p><%= number_to_currency product.price %></p>
+      <p><%= link_to "#{product.name} details", products_path(product) %></p>
+
       <%= form_for @order_item, remote: true do |f| %>
         <%= f.hidden_field :product_id, value: product.id %>
         <span id="form-field"><%= f.number_field :quantity, placeholder: "Oops, breaks if you don't add input!" %></span>
