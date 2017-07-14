@@ -3,16 +3,16 @@ require 'faker'
 Product.destroy_all
 User.destroy_all
 
-admin = User.create(
-  email: 'admin@gmail.com',
-  password: 'password',
-  admin: true
-  )
-user = User.create(
-  email: 'user@gmail.com',
-  password: 'password',
-  admin: false
-  )
+# admin = User.create(
+#   email: 'admin@gmail.com',
+#   password: 'password',
+#   admin: true
+#   )
+# user = User.create(
+#   email: 'user@gmail.com',
+#   password: 'password',
+#   admin: false
+#   )
 
 20.times do |i|
   Product.create!(
