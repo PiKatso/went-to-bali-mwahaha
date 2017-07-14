@@ -1,5 +1,5 @@
 class OrderItem < ApplicationRecord
-  validates :quantity, :presence => true
+  validates :quantity, numericality: true, :presence => true
   belongs_to :order
   belongs_to :product
 end
