@@ -24,7 +24,6 @@ class OrderItemsController < ApplicationController
       format.html { redirect_to cart_path }
       format.js
     end
-    # redirect_to cart_path
   end
 
   private

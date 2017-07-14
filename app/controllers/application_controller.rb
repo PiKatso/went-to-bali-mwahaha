@@ -13,7 +13,6 @@ class ApplicationController < ActionController::Base
   end
 
   def current_order
-    binding.pry
     session[:order_id] ? Order.find(session[:order_id]) : Order.new
   end
 
