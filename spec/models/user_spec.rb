@@ -6,6 +6,6 @@ describe User do
   it { should validate_presence_of :password_digest }
   it { should validate_presence_of :admin }
 
- it { should have_secure_password }
- it { should have_many :orders }
+  it { should have_secure_password }
+  it { should have_many :orders }
 end
