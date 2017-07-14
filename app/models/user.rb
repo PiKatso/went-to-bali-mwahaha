@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  validates :name, :email, :password_digest, :admin, :presence => true
   has_secure_password
   has_many :orders
 
