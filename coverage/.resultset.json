@@ -244,6 +244,7 @@
         1,
         1,
         1,
+        1,
         null
       ],
       "/Users/katgifford1/Desktop/ecommerce-site/app/models/application_record.rb": [
@@ -258,12 +259,15 @@
         2,
         2,
         null,
+        2,
+        null,
         null,
         null,
         null,
         null
       ],
       "/Users/katgifford1/Desktop/ecommerce-site/app/models/order.rb": [
+        1,
         1,
         1,
         1,
@@ -325,6 +329,6 @@
         null
       ]
     },
-    "timestamp": 1500054085
+    "timestamp": 1500054308
   }
 }
