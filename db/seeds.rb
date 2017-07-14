@@ -5,12 +5,12 @@ User.destroy_all
 
 admin = User.create(
   email: 'admin@gmail.com',
-  password: 'adminpass',
+  password: 'password',
   admin: true
   )
 user = User.create(
   email: 'user@gmail.com',
-  password: 'userpass',
+  password: 'password',
   admin: false
   )
 

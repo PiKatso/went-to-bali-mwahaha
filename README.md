@@ -23,8 +23,8 @@ The default credentials provided below, will allow you to see the website as a a
 
 | Type | Email | Password |
 | ---- | ----- | -------- |
-| user | user@user.com | password |
-| admin | admin@admin.com | password |
+| user | user@gmail.com | password |
+| admin | admin@gmail.com | password |
 
 ## Technologies Used
 
