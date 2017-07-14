@@ -1,0 +1,289 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/katgifford1/Desktop/ecommerce-site/config/environment.rb": [
+        null,
+        1,
+        null,
+        null,
+        1
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/config/application.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/config/boot.rb": [
+        1,
+        null,
+        1
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/config/spring.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        5
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/config/environments/test.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/config/initializers/application_controller_renderer.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/config/initializers/assets.rb": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/config/initializers/backtrace_silencers.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/config/initializers/cookies_serializer.rb": [
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/config/initializers/filter_parameter_logging.rb": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/config/initializers/inflections.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/config/initializers/mime_types.rb": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/config/initializers/new_framework_defaults.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/config/initializers/session_store.rb": [
+        null,
+        null,
+        1
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/config/initializers/wrap_parameters.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/spec/factories.rb": [
+
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/config/routes.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/app/helpers/cart_helper.rb": [
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/app/models/order_item.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/spec/models/order_spec.rb": [
+
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/spec/models/product_spec.rb": [
+
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/spec/models/user_spec.rb": [
+
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/app/models/order.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/app/models/product.rb": [
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1500051774
+  }
+}
