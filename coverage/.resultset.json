@@ -252,13 +252,16 @@
         null
       ],
       "/Users/katgifford1/Desktop/ecommerce-site/spec/models/order_spec.rb": [
-
-      ],
-      "/Users/katgifford1/Desktop/ecommerce-site/spec/models/product_spec.rb": [
-
-      ],
-      "/Users/katgifford1/Desktop/ecommerce-site/spec/models/user_spec.rb": [
-
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null
       ],
       "/Users/katgifford1/Desktop/ecommerce-site/app/models/order.rb": [
         1,
@@ -278,12 +281,33 @@
         null,
         null
       ],
+      "/Users/katgifford1/Desktop/ecommerce-site/spec/models/product_spec.rb": [
+        null,
+        1,
+        null,
+        1,
+        2,
+        null
+      ],
       "/Users/katgifford1/Desktop/ecommerce-site/app/models/product.rb": [
         1,
         1,
         null
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/spec/models/user_spec.rb": [
+
+      ],
+      "/Users/katgifford1/Desktop/ecommerce-site/app/models/user.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
       ]
     },
-    "timestamp": 1500051774
+    "timestamp": 1500053090
   }
 }
