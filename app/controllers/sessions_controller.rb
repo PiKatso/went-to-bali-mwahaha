@@ -8,6 +8,7 @@ class SessionsController < ApplicationController
     binding.pry
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
+      flash[:notice] = "sign in successful"
       redirect_to '/'
     else
       redirect_to '/sign_in'
@@ -16,6 +17,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
+    flash[:notice] = "sign out successful, see you next time!"
     redirect_to '/sign_in'
   end
 
