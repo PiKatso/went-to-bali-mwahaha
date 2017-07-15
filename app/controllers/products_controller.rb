@@ -7,8 +7,11 @@ class ProductsController < ApplicationController
   end
 
   def show
-    @product = Product.find(params[:id])
-    @order_item = current_order.order_items.new
+    @product = Product.find(params.fetch(:id))
+    respond_to do |format|
+      format.html { redirect_to product_path(@product) }
+      format.js
+    end
   end
 
   def new

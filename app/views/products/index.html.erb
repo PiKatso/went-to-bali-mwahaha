@@ -5,16 +5,19 @@
   <% @products.each do |product| %>
     <div class="col s4">
       <h4><%= product.name %></h4>
-      <p><%= product.description %></p>
       <p><%= number_to_currency product.price %></p>
-      <p><%= link_to "#{product.name} details", product_path(product) %></p>
+      <p><%= link_to "#{product.name} details", product_path(product), id: product.name, remote: true %></p>
 
-      <%= form_for @order_item, remote: true do |f| %>
-        <%= f.hidden_field :product_id, value: product.id %>
-        <span id="form-field"><%= f.number_field :quantity, placeholder: "Oops, breaks if you don't add input!" %></span>
-        <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
-      <% end %>
+      <div class="<%= product.id %>">
+        <%= form_for @order_item, method: :post, remote: true do |f| %>
+          <%= f.hidden_field :product_id, value: product.id %>
+
+          <span id="<%= product.id %>"></span>
+          <%= f.number_field :quantity, placeholder: "add desired quantity" %></span>
+          <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %>
+        <% end %>
+      </div>
     </div>
   <% end %>
-</div>
+  </div>
 </div>
