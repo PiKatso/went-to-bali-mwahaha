@@ -18,7 +18,8 @@ User.destroy_all
   Product.create!(
     name: Faker::Lorem.word,
     price: rand(10...100),
-    description: Faker::Lorem.sentence(5, false, 0).chop
+    description: Faker::Lorem.sentence(5, false, 0).chop,
+    image: "https://images-na.ssl-images-amazon.com/images/I/51Zh7gH41nL._SY355_.jpg"
     )
 end
 
