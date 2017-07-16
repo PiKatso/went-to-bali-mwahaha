@@ -1,10 +1,10 @@
 <h1>Add a product.</h1>
 
-  <%= form_for @product do |f| %>
-    Name: <%= f.text_field :name %>
-    Description: <%= f.text_field :description %>
-    Image URL: <%= f.text_field :image %>
-    Price: <%= f.number_field :price %>
-  <%= f.submit "Submit" %>
+<%= form_for @product do |f| %>
+  Name: <%= f.text_field :name %>
+  Description: <%= f.text_field :description %>
+  Image URL: <%= f.text_field :image %>
+  Price: <%= f.number_field :price %>
+<%= f.submit "Submit" %>
 
 <% end %>
