@@ -316,11 +316,15 @@
         2,
         2,
         null,
+        null,
+        null,
+        null,
         2,
         2,
         null
       ],
       "/Users/katgifford1/Desktop/ecommerce-site/app/models/user.rb": [
+        1,
         1,
         1,
         1,
@@ -334,6 +338,6 @@
         null
       ]
     },
-    "timestamp": 1500147158
+    "timestamp": 1500236813
   }
 }
