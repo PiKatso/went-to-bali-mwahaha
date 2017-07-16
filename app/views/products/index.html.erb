@@ -13,10 +13,19 @@
           <%= f.hidden_field :product_id, value: product.id %>
 
           <span id="<%= product.id %>"></span>
-          <%= f.number_field :quantity, placeholder: "add desired quantity", min: 1 %></span>
-          <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %>
+          <%= f.number_field :quantity, placeholder: "add desired quantity", min: 1 %>
+          <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
         <% end %>
       </div>
+
+      <!-- Admin -->
+      <div class="admin-funct">
+        <% if current_user.try(:admin?) %>
+        <%= link_to "Edit", edit_product_path(product)%>
+        <%= link_to "Delete", product_path(product), data: { method: "delete"} %>
+        <% end %>
+      </div>
+
     </div>
   <% end %>
   </div>
