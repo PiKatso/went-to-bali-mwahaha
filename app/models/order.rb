@@ -1,5 +1,4 @@
 class Order < ApplicationRecord
-  # validates :total_price, numericality: true
   has_many :order_items
   belongs_to :user, optional: true
 

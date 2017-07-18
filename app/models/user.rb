@@ -4,7 +4,8 @@ class User < ApplicationRecord
   validates :password, :password_confirmation, presence: true
   validates :password, length: { minimum: 6, maximum: 10 }
   validates :password, :format => {:with => /\A(?=.*[a-zA-Z])(?=.*[0-9]).{6,10}\z/}
-  # must contain upper and lowercase letter, number
+  # must contain upper and lowercase letter, number, can has symbols
+
   has_secure_password
   has_many :orders
 

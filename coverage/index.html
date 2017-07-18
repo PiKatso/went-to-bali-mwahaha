@@ -14,26 +14,26 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-16T13:26:53-07:00">2017-07-16T13:26:53-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-18T16:28:29-07:00">2017-07-18T16:28:29-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">94.55%</span></span>
+    (<span class="covered_percent"><span class="green">94.44%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.15
+         1.14
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>27</b> files in total.
-    <b>110</b> relevant lines. 
-    <span class="green"><b>104</b> lines covered</span> and
+    <b>108</b> relevant lines. 
+    <span class="green"><b>102</b> lines covered</span> and
     <span class="red"><b>6</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -82,10 +82,10 @@
       
       <tr>
         <td class="strong"><a href="#78b973f1651a0b180d7c1343b078977096b8dfcf" class="src_link" title="app/models/order.rb">app/models/order.rb</a></td>
-        <td class="red strong">63.64 %</td>
-        <td>17</td>
-        <td>11</td>
-        <td>7</td>
+        <td class="red strong">60.0 %</td>
+        <td>16</td>
+        <td>10</td>
+        <td>6</td>
         <td>4</td>
         <td>0.6</td>
       </tr>
@@ -94,8 +94,8 @@
         <td class="strong"><a href="#a0abc6b5b5490d67ec7ecb65f6aa8f68ddc7bdf9" class="src_link" title="app/models/order_item.rb">app/models/order_item.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
-        <td>4</td>
-        <td>4</td>
+        <td>3</td>
+        <td>3</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -112,10 +112,10 @@
       
       <tr>
         <td class="strong"><a href="#f547b41ab6519e0aeb891c9001a9de089709d04a" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
-        <td class="yellow strong">88.89 %</td>
-        <td>12</td>
+        <td class="yellow strong">90.0 %</td>
+        <td>15</td>
+        <td>10</td>
         <td>9</td>
-        <td>8</td>
         <td>1</td>
         <td>0.9</td>
       </tr>
@@ -294,10 +294,10 @@
         <td class="strong"><a href="#8b26ebb88a2b6075f4e2229f8dc2b9723e825961" class="src_link" title="spec/models/order_spec.rb">spec/models/order_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>13</td>
-        <td>6</td>
-        <td>6</td>
+        <td>4</td>
+        <td>4</td>
         <td>0</td>
-        <td>1.7</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
@@ -313,9 +313,9 @@
       <tr>
         <td class="strong"><a href="#8661da52516cd23471f8370b260001e129aa21a7" class="src_link" title="spec/models/user_spec.rb">spec/models/user_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>15</td>
-        <td>9</td>
-        <td>9</td>
+        <td>14</td>
+        <td>10</td>
+        <td>10</td>
         <td>0</td>
         <td>1.8</td>
       </tr>
@@ -456,10 +456,10 @@
         <div class="source_table" id="78b973f1651a0b180d7c1343b078977096b8dfcf">
   <div class="header">
     <h3>app/models/order.rb</h3>
-    <h4><span class="red">63.64 %</span> covered</h4>
+    <h4><span class="red">60.0 %</span> covered</h4>
     <div>
-      <b>11</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
+      <b>10</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>4</b> lines missed.</span>
     </div>
   </div>
@@ -476,94 +476,88 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :total_price, numericality: true, :presence =&gt; true</code>
+          <code class="ruby">  has_many :order_items</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">  has_many :order_items</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
           <code class="ruby">  belongs_to :user, optional: true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
           <code class="ruby">  before_save :calculate_total</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
           <code class="ruby">  def calculate_total</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
+        <li class="missed" data-hits="0" data-linenumber="8">
           
           
           <code class="ruby">    self.total_price = order_items.collect { |item| item.product.price * item.quantity }.sum</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
+        <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
           <code class="ruby">  def finalize(user)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
+        <li class="missed" data-hits="0" data-linenumber="12">
           
           
           <code class="ruby">    self.user_id = user.id</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="14">
+        <li class="missed" data-hits="0" data-linenumber="13">
           
           
           <code class="ruby">    self.status = 2</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="15">
+        <li class="missed" data-hits="0" data-linenumber="14">
           
           
           <code class="ruby">    self.save</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
@@ -579,8 +573,8 @@
     <h3>app/models/order_item.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -594,10 +588,10 @@
           <code class="ruby">class OrderItem &lt; ApplicationRecord</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="2">
           
-          <code class="ruby">  validates :quantity, presence: true, numericality: { greater_than: 0 }</code>
+          
+          <code class="ruby">  # validates :quantity, numericality: { greater_than: 0 }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
@@ -675,10 +669,10 @@
         <div class="source_table" id="f547b41ab6519e0aeb891c9001a9de089709d04a">
   <div class="header">
     <h3>app/models/user.rb</h3>
-    <h4><span class="yellow">88.89 %</span> covered</h4>
+    <h4><span class="yellow">90.0 %</span> covered</h4>
     <div>
-      <b>9</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>10</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
@@ -695,7 +689,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :name, :admin, :presence =&gt; true</code>
+          <code class="ruby">  validates :name, :presence =&gt; true</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
@@ -719,13 +713,13 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">  has_secure_password</code>
+          <code class="ruby">  validates :password, :format =&gt; {:with =&gt; /\A(?=.*[a-zA-Z])(?=.*[0-9]).{6,10}\z/}</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="7">
           
-          <code class="ruby">  has_many :orders</code>
+          
+          <code class="ruby">  # must contain upper and lowercase letter, number, can has symbols</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
@@ -737,22 +731,40 @@
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">  def previous_orders</code>
+          <code class="ruby">  has_secure_password</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    self.orders.where(status: 2).includes(order_items: :product)</code>
+          <code class="ruby">  has_many :orders</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def previous_orders</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">    self.orders.where(status: 2).includes(order_items: :product)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">end</code>
@@ -2249,8 +2261,8 @@
     <h3>spec/models/order_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2294,16 +2306,16 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="7">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="7">
           
-          <code class="ruby">  it { should validate_presence_of :total_price }</code>
+          
+          <code class="ruby">  # it { should validate_presence_of :total_price }</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="8">
           
-          <code class="ruby">  it { should validate_numericality_of :total_price }</code>
+          
+          <code class="ruby">  # it { should validate_numericality_of :total_price }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
@@ -2431,8 +2443,8 @@
     <h3>spec/models/user_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>9</b> relevant lines. 
-      <span class="green"><b>9</b> lines covered</span> and
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2485,19 +2497,19 @@
         <li class="covered" data-hits="2" data-linenumber="8">
           <span class="hits">2</span>
           
-          <code class="ruby">  it { should validate_presence_of :admin }</code>
+          <code class="ruby">  it { should validate_length_of(:password).is_at_least(6)}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">  # it { should validate_length_of(:password).is_at_least(6)}</code>
+          <code class="ruby">  it { should validate_length_of(:password).is_at_most(10)}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">  # it { should validate_length_of(:password).is_at_most(10)}</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
@@ -2506,25 +2518,19 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="13">
+        <li class="covered" data-hits="2" data-linenumber="12">
           <span class="hits">2</span>
           
           <code class="ruby">  it { should have_secure_password }</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="14">
+        <li class="covered" data-hits="2" data-linenumber="13">
           <span class="hits">2</span>
           
           <code class="ruby">  it { should have_many :orders }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">end</code>
