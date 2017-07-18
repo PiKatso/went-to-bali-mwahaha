@@ -1,9 +1,9 @@
 class User < ApplicationRecord
-  validates :name, :admin, :presence => true
+  validates :name, :presence => true
   validates :email, presence: true, uniqueness: true
   validates :password, :password_confirmation, presence: true
   validates :password, length: { minimum: 6, maximum: 10 }
-  validates :password, :format => {:with => /\A(?=.*[a-zA-Z])(?=.*[0-9]).{6,10}\z/}
+  # validates :password, :format => {:with => /\A(?=.*[a-zA-Z])(?=.*[0-9]).{6,10}\z/}
   has_secure_password
   has_many :orders
 
