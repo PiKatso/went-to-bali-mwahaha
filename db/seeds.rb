@@ -1,24 +1,24 @@
 require 'faker'
 
 Product.destroy_all
-# User.destroy_all
+User.destroy_all
 
 1.times do |i|
   User.create(
     name: 'admin',
-    email: 'admin1@gmail.com',
+    email: 'admin@gmail.com',
     password: 'password',
     password_confirmation: 'password',
     admin: true
     )
-end
-User.create(
-  name: 'user',
-  email: 'user1@gmail.com',
-  password: 'password',
-  password_confirmation: 'password',
-  admin: false
+  User.create(
+    name: 'user',
+    email: 'user@gmail.com',
+    password: 'password',
+    password_confirmation: 'password',
+    admin: false
   )
+end
 
 20.times do |i|
   Product.create!(
