@@ -7,15 +7,15 @@ User.destroy_all
   User.create(
     name: 'admin',
     email: 'admin@gmail.com',
-    password: 'password',
-    password_confirmation: 'password',
+    password: 'Password1',
+    password_confirmation: 'Password1',
     admin: true
     )
   User.create(
     name: 'user',
     email: 'user@gmail.com',
-    password: 'password',
-    password_confirmation: 'password',
+    password: 'Password1!',
+    password_confirmation: 'Password1!',
     admin: false
   )
 end
